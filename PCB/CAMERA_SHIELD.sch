@@ -13928,7 +13928,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="VALUE" x="14.032" y="182.67" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND7" gate="1" x="318.13" y="212.72" smashed="yes">
-<attribute name="VALUE" x="315.59" y="210.18" size="1.778" layer="96"/>
+<attribute name="VALUE" x="320.71" y="212.53" size="1.778" layer="96"/>
 </instance>
 <instance part="SDCARD" gate="G$1" x="371.47" y="255.9" smashed="yes">
 <attribute name="NAME" x="375.28" y="263.52" size="1.778" layer="95" align="center-left"/>
@@ -13988,7 +13988,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="VALUE" x="184.34" y="94.13" size="1.778" layer="96" align="center-left"/>
 </instance>
 <instance part="GND8" gate="1" x="316.64" y="212.67" smashed="yes">
-<attribute name="VALUE" x="314.1" y="210.13" size="1.778" layer="96"/>
+<attribute name="VALUE" x="308.94" y="212.02" size="1.778" layer="96"/>
 </instance>
 <instance part="GND9" gate="1" x="-1.77" y="253.99" smashed="yes">
 <attribute name="VALUE" x="-4.31" y="251.45" size="1.778" layer="96"/>
@@ -14138,15 +14138,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </instance>
 </instances>
 <busses>
-<bus name="SIM:C1,C2,C3,C4,C5,C6,C7,C8,GND">
-<segment>
-<wire x1="316.64" y1="248.23" x2="316.64" y2="266.01" width="0.762" layer="92"/>
-<wire x1="316.64" y1="266.01" x2="357.28" y2="266.01" width="0.762" layer="92"/>
-<wire x1="357.28" y1="266.01" x2="436.02" y2="266.01" width="0.762" layer="92"/>
-<wire x1="436.02" y1="266.01" x2="436.02" y2="250.77" width="0.762" layer="92"/>
-<wire x1="357.28" y1="266.01" x2="357.28" y2="250.77" width="0.762" layer="92"/>
-</segment>
-</bus>
 </busses>
 <nets>
 <net name="GND" class="0">
@@ -14677,58 +14668,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="204.5" y="86.15" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="SIGNAL_C7" class="0">
-<segment>
-<pinref part="C10" gate="G$1" pin="1"/>
-<pinref part="TVS1" gate="G$1" pin="2"/>
-<wire x1="230.28" y1="253.31" x2="230.28" y2="238.07" width="0.1524" layer="91"/>
-<wire x1="230.28" y1="253.31" x2="230.3" y2="253.31" width="0.1524" layer="91"/>
-<wire x1="230.3" y1="253.31" x2="276" y2="253.31" width="0.1524" layer="91"/>
-<wire x1="276" y1="253.31" x2="276" y2="238.07" width="0.1524" layer="91"/>
-<wire x1="276" y1="253.31" x2="316.64" y2="253.31" width="0.1524" layer="91"/>
-<junction x="276" y="253.31"/>
-<junction x="230.3" y="253.31"/>
-</segment>
-</net>
-<net name="SIGNAL_C3" class="0">
-<segment>
-<wire x1="286.16" y1="238.07" x2="286.16" y2="250.77" width="0.1524" layer="91"/>
-<wire x1="242.98" y1="238.07" x2="242.98" y2="250.77" width="0.1524" layer="91"/>
-<pinref part="C9" gate="G$1" pin="1"/>
-<pinref part="TVS2" gate="G$1" pin="2"/>
-<wire x1="242.98" y1="250.77" x2="243.01" y2="250.77" width="0.1524" layer="91"/>
-<wire x1="243.01" y1="250.77" x2="286.16" y2="250.77" width="0.1524" layer="91"/>
-<wire x1="286.16" y1="250.77" x2="316.64" y2="250.77" width="0.1524" layer="91"/>
-<junction x="286.16" y="250.77"/>
-<junction x="243.01" y="250.77"/>
-</segment>
-</net>
-<net name="SIGNAL_C2" class="0">
-<segment>
-<wire x1="316.64" y1="255.85" x2="296.32" y2="255.85" width="0.1524" layer="91"/>
-<wire x1="296.32" y1="255.85" x2="253.14" y2="255.85" width="0.1524" layer="91"/>
-<wire x1="296.32" y1="238.07" x2="296.32" y2="255.85" width="0.1524" layer="91"/>
-<junction x="296.32" y="255.85"/>
-<wire x1="253.14" y1="238.07" x2="253.14" y2="255.73" width="0.1524" layer="91"/>
-<pinref part="C8" gate="G$1" pin="1"/>
-<pinref part="TVS3" gate="G$1" pin="2"/>
-<junction x="253.14" y="255.73"/>
-<wire x1="253.14" y1="255.73" x2="253.14" y2="255.85" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="SIGNAL_C1" class="0">
-<segment>
-<wire x1="316.64" y1="258.39" x2="306.48" y2="258.39" width="0.1524" layer="91"/>
-<wire x1="306.48" y1="258.39" x2="263.34" y2="258.39" width="0.1524" layer="91"/>
-<wire x1="263.34" y1="258.39" x2="263.3" y2="258.39" width="0.1524" layer="91"/>
-<wire x1="306.48" y1="238.07" x2="306.48" y2="258.39" width="0.1524" layer="91"/>
-<junction x="306.48" y="258.39"/>
-<wire x1="263.3" y1="238.07" x2="263.3" y2="258.39" width="0.1524" layer="91"/>
-<pinref part="C7" gate="G$1" pin="1"/>
-<pinref part="TVS4" gate="G$1" pin="2"/>
-<junction x="263.34" y="258.39"/>
-</segment>
-</net>
 <net name="V_INT" class="0">
 <segment>
 <pinref part="VINT" gate="G$1" pin="TP"/>
@@ -14739,6 +14678,12 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="41.41" y1="314.95" x2="84.56" y2="314.95" width="0.1524" layer="91"/>
 <junction x="84.56" y="314.95"/>
 <wire x1="84.56" y1="314.95" x2="84.59" y2="314.95" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="V_INT"/>
+<wire x1="178.71" y1="277.57" x2="202.98" y2="277.57" width="0.1524" layer="91"/>
+<wire x1="202.98" y1="277.57" x2="202.98" y2="277.36" width="0.1524" layer="91"/>
+<label x="183.92" y="277.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GSM_RESET_N" class="0">
@@ -14897,9 +14842,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </segment>
 <segment>
 <pinref part="IC4" gate="G$1" pin="A2"/>
-<wire x1="38.87" y1="287.01" x2="43.63" y2="287.01" width="0.1524" layer="91"/>
-<wire x1="43.63" y1="287.01" x2="43.63" y2="286.88" width="0.1524" layer="91"/>
-<label x="39.74" y="286.8" size="1.778" layer="95"/>
+<pinref part="RTS" gate="G$1" pin="TP"/>
+<wire x1="38.87" y1="287.01" x2="64.27" y2="287.01" width="0.1524" layer="91"/>
+<wire x1="64.27" y1="287.01" x2="64.27" y2="297.17" width="0.1524" layer="91"/>
+<label x="40.18" y="286.93" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CTS" class="0">
@@ -14910,91 +14856,80 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </segment>
 <segment>
 <pinref part="IC4" gate="G$1" pin="A1"/>
-<wire x1="38.87" y1="289.55" x2="43.95" y2="289.55" width="0.1524" layer="91"/>
-<label x="39.45" y="289.64" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="SDCARD" gate="G$1" pin="C1_VCC"/>
-<wire x1="371.47" y1="255.9" x2="357.47" y2="255.9" width="0.1524" layer="91"/>
-<wire x1="357.47" y1="255.9" x2="357.47" y2="255.98" width="0.1524" layer="91"/>
-<wire x1="357.47" y1="256.28" x2="357.47" y2="255.98" width="0.1524" layer="91"/>
-<wire x1="357.47" y1="255.98" x2="357.07" y2="255.98" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="SDCARD" gate="G$1" pin="C3_CLK"/>
-<wire x1="371.47" y1="253.36" x2="357.17" y2="253.36" width="0.1524" layer="91"/>
-<wire x1="357.17" y1="253.36" x2="357.17" y2="253.58" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="SDCARD" gate="G$1" pin="C2_RST"/>
-<wire x1="427.35" y1="255.9" x2="435.87" y2="255.9" width="0.1524" layer="91"/>
-<wire x1="435.87" y1="255.9" x2="435.87" y2="255.93" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="SDCARD" gate="G$1" pin="C5_GND"/>
-<wire x1="427.35" y1="253.36" x2="435.97" y2="253.36" width="0.1524" layer="91"/>
-<wire x1="435.97" y1="253.36" x2="435.97" y2="253.43" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="SDCARD" gate="G$1" pin="C7_I/O"/>
-<wire x1="427.35" y1="250.82" x2="436.07" y2="250.82" width="0.1524" layer="91"/>
-<wire x1="436.07" y1="250.82" x2="436.07" y2="250.68" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="VSIM" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="VSIM"/>
-<wire x1="178.71" y1="272.49" x2="193.02" y2="272.49" width="0.1524" layer="91"/>
-<label x="182.55" y="272.47" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="263.42" y1="258.32" x2="204.37" y2="258.32" width="0.1524" layer="91"/>
-<label x="205.94" y="258.31" size="1.778" layer="95"/>
+<pinref part="CTS" gate="G$1" pin="TP"/>
+<wire x1="38.87" y1="289.55" x2="54.11" y2="289.55" width="0.1524" layer="91"/>
+<wire x1="54.11" y1="289.55" x2="54.11" y2="297.17" width="0.1524" layer="91"/>
+<label x="39.29" y="289.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SIM_CLK" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="SIM_CLK"/>
-<wire x1="178.71" y1="269.95" x2="193.09" y2="269.95" width="0.1524" layer="91"/>
-<wire x1="193.09" y1="269.95" x2="193.09" y2="269.93" width="0.1524" layer="91"/>
-<label x="182.06" y="269.86" size="1.778" layer="95"/>
+<wire x1="178.71" y1="269.95" x2="196.23" y2="269.95" width="0.1524" layer="91"/>
+<wire x1="196.23" y1="269.95" x2="196.23" y2="269.91" width="0.1524" layer="91"/>
+<label x="184.33" y="270.02" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="243.09" y1="250.59" x2="205.24" y2="250.59" width="0.1524" layer="91"/>
-<label x="205.47" y="250.52" size="1.778" layer="95"/>
+<wire x1="286.16" y1="238.07" x2="286.16" y2="250.77" width="0.1524" layer="91"/>
+<wire x1="242.98" y1="238.07" x2="242.98" y2="250.77" width="0.1524" layer="91"/>
+<pinref part="C9" gate="G$1" pin="1"/>
+<pinref part="TVS2" gate="G$1" pin="2"/>
+<wire x1="242.98" y1="250.77" x2="243.01" y2="250.77" width="0.1524" layer="91"/>
+<wire x1="243.01" y1="250.77" x2="286.16" y2="250.77" width="0.1524" layer="91"/>
+<junction x="243.01" y="250.77"/>
+<label x="278.04" y="250.57" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SDCARD" gate="G$1" pin="C3_CLK"/>
+<wire x1="371.47" y1="253.36" x2="360.14" y2="253.36" width="0.1524" layer="91"/>
+<label x="361.67" y="253.46" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SIM_RST" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="SIM_RST"/>
-<wire x1="178.71" y1="267.41" x2="193" y2="267.41" width="0.1524" layer="91"/>
-<wire x1="193" y1="267.41" x2="193" y2="267.39" width="0.1524" layer="91"/>
-<label x="181.73" y="267.37" size="1.778" layer="95"/>
+<wire x1="178.71" y1="267.41" x2="196.37" y2="267.41" width="0.1524" layer="91"/>
+<wire x1="196.37" y1="267.41" x2="196.37" y2="267.36" width="0.1524" layer="91"/>
+<label x="184.23" y="267.67" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="253.12" y1="255.78" x2="204.79" y2="255.78" width="0.1524" layer="91"/>
-<label x="205.42" y="255.75" size="1.778" layer="95"/>
+<pinref part="SDCARD" gate="G$1" pin="C2_RST"/>
+<wire x1="427.35" y1="255.9" x2="435.87" y2="255.9" width="0.1524" layer="91"/>
+<wire x1="435.87" y1="255.9" x2="435.87" y2="255.93" width="0.1524" layer="91"/>
+<label x="428.27" y="255.8" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="296.32" y1="255.85" x2="253.14" y2="255.85" width="0.1524" layer="91"/>
+<wire x1="296.32" y1="238.07" x2="296.32" y2="255.85" width="0.1524" layer="91"/>
+<wire x1="253.14" y1="238.07" x2="253.14" y2="255.73" width="0.1524" layer="91"/>
+<pinref part="C8" gate="G$1" pin="1"/>
+<pinref part="TVS3" gate="G$1" pin="2"/>
+<junction x="253.14" y="255.73"/>
+<wire x1="253.14" y1="255.73" x2="253.14" y2="255.85" width="0.1524" layer="91"/>
+<label x="275.17" y="255.67" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SIM_IO" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="SIM_IO"/>
-<wire x1="178.71" y1="264.87" x2="192.86" y2="264.87" width="0.1524" layer="91"/>
-<label x="181.48" y="264.75" size="1.778" layer="95"/>
+<wire x1="178.71" y1="264.87" x2="196.18" y2="264.87" width="0.1524" layer="91"/>
+<wire x1="196.18" y1="264.87" x2="196.18" y2="264.84" width="0.1524" layer="91"/>
+<label x="183.96" y="264.79" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="230.3" y1="253.22" x2="205.17" y2="253.22" width="0.1524" layer="91"/>
-<label x="205.42" y="253.08" size="1.778" layer="95"/>
+<pinref part="C10" gate="G$1" pin="1"/>
+<pinref part="TVS1" gate="G$1" pin="2"/>
+<wire x1="230.28" y1="253.31" x2="230.28" y2="238.07" width="0.1524" layer="91"/>
+<wire x1="230.28" y1="253.31" x2="230.3" y2="253.31" width="0.1524" layer="91"/>
+<wire x1="230.3" y1="253.31" x2="276" y2="253.31" width="0.1524" layer="91"/>
+<wire x1="276" y1="253.31" x2="276" y2="238.07" width="0.1524" layer="91"/>
+<junction x="230.3" y="253.31"/>
+<label x="269.27" y="253.12" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SDCARD" gate="G$1" pin="C7_I/O"/>
+<wire x1="427.35" y1="250.82" x2="436.07" y2="250.82" width="0.1524" layer="91"/>
+<label x="428.68" y="251.05" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ANT" class="0">
@@ -15048,8 +14983,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </segment>
 <segment>
 <pinref part="IC4" gate="G$1" pin="A4"/>
-<wire x1="38.87" y1="281.93" x2="43.95" y2="281.93" width="0.1524" layer="91"/>
-<label x="39.35" y="281.87" size="1.778" layer="95"/>
+<pinref part="RXD" gate="G$1" pin="TP"/>
+<wire x1="38.87" y1="281.93" x2="84.59" y2="281.93" width="0.1524" layer="91"/>
+<wire x1="84.59" y1="281.93" x2="84.59" y2="297.17" width="0.1524" layer="91"/>
+<label x="40.51" y="281.84" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VIN" class="0">
@@ -15059,10 +14996,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="86.95" y="314.89" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="V_INT"/>
-<wire x1="178.71" y1="277.57" x2="203.46" y2="277.57" width="0.1524" layer="91"/>
-<wire x1="203.46" y1="277.57" x2="203.46" y2="277.52" width="0.1524" layer="91"/>
-<label x="180.68" y="277.72" size="1.778" layer="95"/>
+<wire x1="203.22" y1="277.57" x2="203.22" y2="277.63" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GSM_EN" class="0">
@@ -15077,25 +15011,26 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <junction x="384.01" y="172.17"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="VSIM" class="0">
 <segment>
-<pinref part="CTS" gate="G$1" pin="TP"/>
-<wire x1="54.11" y1="297.17" x2="54.11" y2="289.57" width="0.1524" layer="91"/>
-<wire x1="54.11" y1="289.57" x2="43.76" y2="289.57" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="VSIM"/>
+<wire x1="178.71" y1="272.49" x2="196.58" y2="272.49" width="0.1524" layer="91"/>
+<label x="184.76" y="272.63" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="N$11" class="0">
 <segment>
-<pinref part="RTS" gate="G$1" pin="TP"/>
-<wire x1="64.27" y1="297.17" x2="64.27" y2="287.02" width="0.1524" layer="91"/>
-<wire x1="64.27" y1="287.02" x2="43.47" y2="287.02" width="0.1524" layer="91"/>
+<pinref part="SDCARD" gate="G$1" pin="C1_VCC"/>
+<wire x1="371.47" y1="255.9" x2="359.33" y2="255.9" width="0.1524" layer="91"/>
+<label x="361.94" y="256.1" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="N$13" class="0">
 <segment>
-<pinref part="RXD" gate="G$1" pin="TP"/>
-<wire x1="84.59" y1="297.17" x2="84.59" y2="281.96" width="0.1524" layer="91"/>
-<wire x1="84.59" y1="281.96" x2="43.79" y2="281.96" width="0.1524" layer="91"/>
+<wire x1="306.48" y1="258.39" x2="263.34" y2="258.39" width="0.1524" layer="91"/>
+<wire x1="263.34" y1="258.39" x2="263.3" y2="258.39" width="0.1524" layer="91"/>
+<wire x1="306.48" y1="238.07" x2="306.48" y2="258.39" width="0.1524" layer="91"/>
+<wire x1="263.3" y1="238.07" x2="263.3" y2="258.39" width="0.1524" layer="91"/>
+<pinref part="C7" gate="G$1" pin="1"/>
+<pinref part="TVS4" gate="G$1" pin="2"/>
+<junction x="263.34" y="258.39"/>
+<label x="285.38" y="258.54" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
