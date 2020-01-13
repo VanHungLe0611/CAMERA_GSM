@@ -12346,6 +12346,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="Q3" library="SamacSys_Parts" deviceset="SSM3J338R,LF" device=""/>
 <part name="R17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="470k"/>
+<part name="Q5" library="FDN304P" deviceset="FDN304P" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13108,6 +13109,16 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="-77.97" y1="158.45" x2="-78.25" y2="158.45" width="0.1524" layer="91"/>
 <label x="-77.75" y="161.15" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="HUNG" gate="G$1" pin="VDD_6"/>
+<wire x1="42.17" y1="152.46" x2="42.17" y2="161.26" width="0.1524" layer="91"/>
+<label x="42.05" y="155.55" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="HUNG" gate="G$1" pin="V_DDSDMMC"/>
+<wire x1="100.59" y1="152.46" x2="100.59" y2="161.26" width="0.1524" layer="91"/>
+<label x="100.7" y="155.15" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
@@ -13380,19 +13391,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </net>
 <net name="VDD" class="0">
 <segment>
-<pinref part="HUNG" gate="G$1" pin="VDD_6"/>
-<wire x1="42.17" y1="152.46" x2="42.17" y2="161.26" width="0.1524" layer="91"/>
-<label x="42.05" y="155.55" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
 <pinref part="HUNG" gate="G$1" pin="VDD_5"/>
 <wire x1="75.19" y1="152.46" x2="75.19" y2="161.26" width="0.1524" layer="91"/>
 <label x="75.3" y="155.45" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<pinref part="HUNG" gate="G$1" pin="V_DDSDMMC"/>
-<wire x1="100.59" y1="152.46" x2="100.59" y2="161.26" width="0.1524" layer="91"/>
-<label x="100.7" y="155.15" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="N$110" class="0">
@@ -13447,13 +13448,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <segment>
 <pinref part="HUNG" gate="G$1" pin="PG14"/>
 <wire x1="80.27" y1="152.46" x2="80.27" y2="161.26" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="PIR_IN" class="0">
-<segment>
-<pinref part="HUNG" gate="G$1" pin="PG12"/>
-<wire x1="85.35" y1="152.46" x2="85.35" y2="161.26" width="0.1524" layer="91"/>
-<label x="85.15" y="155.3" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="N$129" class="0">
@@ -13712,6 +13706,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="PIR" gate="G$1" pin="1"/>
 <wire x1="133.56" y1="-34.53" x2="118.32" y2="-34.53" width="0.1524" layer="91"/>
 <label x="118.32" y="-34.53" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="HUNG" gate="G$1" pin="PG12"/>
+<wire x1="85.35" y1="152.46" x2="85.35" y2="161.26" width="0.1524" layer="91"/>
+<label x="85.15" y="155.3" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="PIR_3V3" class="0">
@@ -14136,6 +14135,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="NAME" x="385.5086" y="183.6" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="380.708" y="183.6" size="1.778" layer="96" rot="R270"/>
 </instance>
+<instance part="Q5" gate="G$1" x="485.61" y="203.03" smashed="yes">
+<attribute name="NAME" x="497.04" y="206.84" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="497.04" y="204.3" size="1.778" layer="96" align="center-left"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -14436,11 +14439,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="192.202" y="151.748" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SDCARD" gate="G$1" pin="T4_VDD"/>
-<wire x1="427.35" y1="245.74" x2="488.31" y2="245.74" width="0.1524" layer="91"/>
-<label x="453.62" y="245.73" size="1.778" layer="95"/>
-</segment>
-<segment>
 <wire x1="-80.51" y1="302.25" x2="-34.79" y2="302.25" width="0.1524" layer="91"/>
 <label x="-80.51" y="302.25" size="1.778" layer="95"/>
 <pinref part="R32" gate="G$1" pin="1"/>
@@ -14454,6 +14452,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="-1.77" y1="269.23" x2="-1.77" y2="292.09" width="0.1524" layer="91"/>
 <junction x="-1.77" y="292.09"/>
 <wire x1="-34.79" y1="302.25" x2="-1.77" y2="302.25" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="Q5" gate="G$1" pin="S"/>
+<wire x1="493.23" y1="197.95" x2="493.23" y2="187.79" width="0.1524" layer="91"/>
+<label x="493.23" y="192.87" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RCC_OSC_IN" class="0">
@@ -15031,6 +15034,25 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="TVS4" gate="G$1" pin="2"/>
 <junction x="263.34" y="258.39"/>
 <label x="285.38" y="258.54" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="3V3_SDCARD" class="0">
+<segment>
+<pinref part="Q5" gate="G$1" pin="D"/>
+<wire x1="493.23" y1="225.89" x2="493.23" y2="213.19" width="0.1524" layer="91"/>
+<label x="493.23" y="218.27" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SDCARD" gate="G$1" pin="T4_VDD"/>
+<wire x1="427.35" y1="245.74" x2="488.31" y2="245.74" width="0.1524" layer="91"/>
+<label x="453.62" y="245.73" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MOSFET_SDCARD" class="0">
+<segment>
+<pinref part="Q5" gate="G$1" pin="G"/>
+<wire x1="475.45" y1="203.03" x2="485.61" y2="203.03" width="0.1524" layer="91"/>
+<label x="467.45" y="203.03" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
