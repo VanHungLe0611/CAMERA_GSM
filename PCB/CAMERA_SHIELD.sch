@@ -14762,13 +14762,16 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </net>
 <net name="V_GSM" class="0">
 <segment>
+<junction x="223.73" y="282.65"/>
+<wire x1="223.73" y1="277.57" x2="223.73" y2="282.65" width="0.1524" layer="91"/>
+<pinref part="C24" gate="G$1" pin="1"/>
+</segment>
+<segment>
 <wire x1="223.8" y1="282.65" x2="233.89" y2="282.65" width="0.1524" layer="91"/>
 <wire x1="233.89" y1="282.65" x2="244.05" y2="282.65" width="0.1524" layer="91"/>
 <wire x1="244.05" y1="282.65" x2="254.21" y2="282.65" width="0.1524" layer="91"/>
 <wire x1="254.21" y1="282.65" x2="264.37" y2="282.65" width="0.1524" layer="91"/>
 <wire x1="274.53" y1="282.65" x2="287.23" y2="282.65" width="0.1524" layer="91"/>
-<wire x1="223.73" y1="277.57" x2="223.73" y2="282.65" width="0.1524" layer="91"/>
-<junction x="223.73" y="282.65"/>
 <wire x1="233.89" y1="277.57" x2="233.89" y2="282.65" width="0.1524" layer="91"/>
 <junction x="233.89" y="282.65"/>
 <wire x1="244.05" y1="277.57" x2="244.05" y2="282.65" width="0.1524" layer="91"/>
@@ -14787,13 +14790,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="C14" gate="G$1" pin="1"/>
 <pinref part="C15" gate="G$1" pin="1"/>
 <pinref part="C17" gate="G$1" pin="1"/>
-<pinref part="C24" gate="G$1" pin="1"/>
 <pinref part="V_GSM" gate="G$1" pin="TP"/>
 <pinref part="TVS8" gate="G$1" pin="2"/>
-<pinref part="U1" gate="G$1" pin="VCC"/>
-<wire x1="178.71" y1="282.65" x2="223.75" y2="282.65" width="0.1524" layer="91"/>
 <wire x1="223.8" y1="282.55" x2="223.8" y2="282.65" width="0.1524" layer="91"/>
-<wire x1="223.75" y1="282.65" x2="223.95" y2="282.65" width="0.1524" layer="91"/>
 <wire x1="223.95" y1="282.65" x2="223.95" y2="282.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -15053,6 +15052,12 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="Q5" gate="G$1" pin="G"/>
 <wire x1="475.45" y1="203.03" x2="485.61" y2="203.03" width="0.1524" layer="91"/>
 <label x="467.45" y="203.03" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$196" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="VCC"/>
+<wire x1="178.71" y1="282.65" x2="223.75" y2="282.65" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
