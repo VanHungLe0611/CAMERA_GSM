@@ -13839,6 +13839,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <text x="158.55" y="61.57" size="2.54" layer="90">configured for 450mA charge current</text>
 <text x="12.4" y="59.45" size="1.778" layer="90">UART</text>
 <text x="21.09" y="304.79" size="2.54" layer="90">Level Shifter</text>
+<text x="159.84" y="293.81" size="5.08" layer="91">GSM_MODUL</text>
 </plain>
 <instances>
 <instance part="BAT0" gate="G$1" x="33.01" y="84.46" smashed="yes" rot="R180">
@@ -14910,10 +14911,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <net name="ANT" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="ANT1"/>
-<wire x1="132.99" y1="272.49" x2="117.88" y2="272.49" width="0.1524" layer="91"/>
+<wire x1="132.99" y1="272.49" x2="109.87" y2="272.49" width="0.1524" layer="91"/>
 <pinref part="ANT2" gate="G$1" pin="SIG"/>
-<wire x1="117.88" y1="272.49" x2="117.88" y2="317.4" width="0.1524" layer="91"/>
-<wire x1="117.88" y1="317.4" x2="137.91" y2="317.4" width="0.1524" layer="91"/>
+<wire x1="109.87" y1="272.49" x2="109.87" y2="317.4" width="0.1524" layer="91"/>
+<wire x1="109.87" y1="317.4" x2="137.91" y2="317.4" width="0.1524" layer="91"/>
 <label x="127.8" y="274.2" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
